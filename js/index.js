@@ -4,7 +4,6 @@ const ulHead = document.querySelector("header>ul");
 const menubtn = document.querySelector("header>span[name='menu']");
 const links_head = document.querySelectorAll("ul>li>a");
 const scetions = document.querySelectorAll("section");
-console.log(scetions);
 
 //button
 menubtn.addEventListener("click", () => {
@@ -62,3 +61,34 @@ function ActiveLink(secid) {
     active_link.classList.add("light");
 }
 // End header
+
+//Start Skills progress
+let divSkills = document.querySelector(".skills");
+let spanProgress = document.querySelectorAll(".progress>div>.ProgBg>span ");
+
+window.addEventListener("scroll", function() {
+    if (this.scrollY >= divSkills.offsetTop - 250) {
+        spanProgress.forEach((item) => {
+            item.style.width = `${item.dataset.width}`;
+        });
+    }
+});
+
+//End Skills progress
+
+//Start Footer
+const btn = document.getElementById("ToUp");
+const Contact = document.querySelector("#contact");
+//show
+window.addEventListener("scroll", function() {
+    if (this.scrollY >= Contact.offsetTop - 50) {
+        btn.classList.add("OpenArrowFoot");
+    }
+});
+//translate
+btn.addEventListener("click", () => {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 500);
+});
+//End Footer
