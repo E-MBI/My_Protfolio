@@ -377,7 +377,7 @@ header>a>i {
     header>span[name="menu"] {
         display: block;
         top: 33px;
-        right: 11%;
+        right: 33%;
     }
     header>ul {
         padding: 0%;
@@ -421,7 +421,7 @@ header>a>i {
     nav>.container>.info>p {
         color: #cccc;
         padding: 2px 40px 21px 2px;
-        width: 85%;
+        width: 75%;
         line-height: 1.6;
     }
 }
