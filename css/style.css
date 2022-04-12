@@ -377,6 +377,7 @@ header>a>i {
     header>span[name="menu"] {
         display: block;
         top: 33px;
+        right: 11%;
     }
     header>ul {
         padding: 0%;
@@ -763,6 +764,12 @@ header>a>i {
     #resume>.container>.work {
         margin: 0px 20px;
     }
+    #resume>.container>.edu>.eduInfo {
+        max-width: 65%;
+    }
+    #resume>.container>.work>.workInfo>div {
+       max-width: 65%;
+    }
 }
 
 
@@ -870,12 +877,13 @@ header>a>i {
 /* Media Query Skills */
 
 @media (max-width:767px) {
-    .skills {
-        display: flex;
-        justify-content: center;
-    }
+.skills {
+    display: flex;
+    flex-direction: column;
+    max-width: 73%;
+    margin: 10px 20px;
 }
-
+}
 
 /*End Skills */
 
@@ -993,6 +1001,16 @@ header>a>i {
     z-index: 0;
 }
 
+@media(max-width:767px){
+    #works>.container {
+            width: 375px;
+    }
+    #works>.container>a { 
+     display: block;
+     width: 85%;
+     margin: 5px auto;
+    }
+}
 
 /*End wroks */
 
